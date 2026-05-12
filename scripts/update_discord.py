@@ -68,34 +68,22 @@ def generate_svg(data):
             custom_status = act.get("state", "")
             break
 
-    display_activities = []
-
-    if data.get("listening_to_spotify"):
-        s = data["spotify"]
-        album_art_b64 = get_image_base64(s["album_art_url"])
-        display_activities.append({
-            "kind": "spotify", "name": "Spotify",
-            "details": truncate(s["song"]),
-            "state":   truncate(f"by {s['artist']}"),
-            "image":   album_art_b64,
-        })
-
-    for act in data.get("activities", []):
-        if act["type"] == 0:
-            display_activities.append({
-                "kind":    "game",
-                "name":    truncate(act["name"]),
-                "details": truncate(act.get("details", "")),
-                "state":   truncate(act.get("state", "")),
-            })
-
-    if not display_activities:
-        display_activities.append({
-            "kind": "idle", "name": "Napping…",
-            "details": "Uhee~ Senior is sleeping", "state": "",
-        })
-
-    display_activities = display_activities[:2]
+    display_activities = [
+        {
+            "kind": "arch",
+            "name": "Arch Linux",
+            "details": "Operating System",
+            "state": "I use Arch BTW",
+            "image": get_image_base64("https://raw.githubusercontent.com/devicons/devicon/master/icons/archlinux/archlinux-original.svg")
+        },
+        {
+            "kind": "nvim",
+            "name": "Neovim",
+            "details": "Text Editor",
+            "state": "Editing README.md",
+            "image": get_image_base64("https://raw.githubusercontent.com/devicons/devicon/master/icons/neovim/neovim-original.svg")
+        }
+    ]
 
     W         = 480
     AVT_R     = 40
@@ -116,25 +104,19 @@ def generate_svg(data):
         by = HEADER_H + BOX_TOP + i * (BOX_H + BOX_GAP)
         bw = W - PAD * 2
 
-        if act["kind"] == "spotify" and act.get("image"):
-            inner = f"""
-            <rect x="10" y="10" width="42" height="42" rx="8" fill="{BG_DARK}" opacity="0.6"/>
-            <image href="data:image/png;base64,{act['image']}" x="10" y="10" width="42" height="42" clip-path="inset(0% round 8px)"/>
-            <text x="62" y="26" font-family="Segoe UI,sans-serif" font-size="13" font-weight="bold" fill="{SPOTIFY}">🎵 {act['name']}</text>
-            <text x="62" y="43" font-family="Segoe UI,sans-serif" font-size="11" fill="{WHITE}">{act['details']}</text>
-            <text x="62" y="56" font-family="Segoe UI,sans-serif" font-size="10" fill="{SUBTEXT}">{act['state']}</text>
-            """
-        elif act["kind"] == "game":
-            inner = f"""
-            <text x="14" y="24" font-family="Segoe UI,sans-serif" font-size="13" font-weight="bold" fill="{PRIMARY}">🎮 {act['name']}</text>
-            <text x="14" y="41" font-family="Segoe UI,sans-serif" font-size="11" fill="{WHITE}">{act['details']}</text>
-            <text x="14" y="55" font-family="Segoe UI,sans-serif" font-size="10" fill="{SUBTEXT}">{act['state']}</text>
-            """
-        else:
-            inner = f"""
-            <text x="14" y="24" font-family="Segoe UI,sans-serif" font-size="13" font-weight="bold" fill="{PRIMARY}">😴 {act['name']}</text>
-            <text x="14" y="42" font-family="Segoe UI,sans-serif" font-size="11" fill="{SUBTEXT}">{act['details']}</text>
-            """
+        icon_svg = ""
+        if act.get("image"):
+             icon_svg = f'<image href="data:image/svg+xml;base64,{act["image"]}" x="10" y="10" width="42" height="42"/>'
+        
+        icon_bg_color = PRIMARY if act["kind"] == "arch" else "#57A143" # Neovim green-ish
+
+        inner = f"""
+        <rect x="10" y="10" width="42" height="42" rx="8" fill="{icon_bg_color}" opacity="0.15"/>
+        {icon_svg}
+        <text x="62" y="26" font-family="Segoe UI,sans-serif" font-size="13" font-weight="bold" fill="{WHITE}">{act['name']}</text>
+        <text x="62" y="43" font-family="Segoe UI,sans-serif" font-size="11" fill="{WHITE}">{act['details']}</text>
+        <text x="62" y="56" font-family="Segoe UI,sans-serif" font-size="10" fill="{SUBTEXT}">{act['state']}</text>
+        """
 
         activities_svg += f"""
         <g transform="translate({bx},{by})">
