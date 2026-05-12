@@ -95,12 +95,12 @@
 <img src="./Assets/pink-divider.svg" width="100%" />
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=f3a6c7&height=40&text=💻%20My%20Dev%20Environment&fontSize=20&fontColor=ffffff&fontAlign=50&fontAlignY=65" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=f3a6c7&height=40&text=💬%20Contact%20me%20via%20Discord&fontSize=20&fontColor=ffffff&fontAlign=50&fontAlignY=65" />
   <br/>
   <table border="0" style="background-color: #f3a6c71f; border: 2px solid #f3a6c7; border-radius: 16px; border-collapse: separate; width: 100%; max-width: 1100px;">
     <tr>
       <td align="center" valign="middle" width="35%" style="border: none; padding: 12px;">
-        <img src="./Assets/hoshinooo.jpg" width="220" style="height: auto; border-radius: 12px;" />
+        <img src="./Assets/hoshinooo.jpg" width="220" style="height: auto; border-radius: 12px; border: 5px solid #f3a6c7;" />
       </td>
       <td align="center" valign="middle" width="65%" style="border: none; padding: 12px;">
         <a href="https://discord.com/users/687315513021562892" target="_blank">
