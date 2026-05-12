@@ -34,7 +34,7 @@
 <img src="./Assets/pink-divider.svg" width="100%" />
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=f3a6c7&height=35&section=header&text=🛠️%20My%20Tools&fontSize=20&fontColor=ffffff&fontAlign=50&fontAlignY=50" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=f3a6c7&height=40&text=🛠️%20My%20Tools&fontSize=20&fontColor=ffffff&fontAlign=50&fontAlignY=50" />
 </p>
 
 <p align="center">
@@ -50,7 +50,7 @@
 <img src="./Assets/pink-divider.svg" width="100%" />
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=f3a6c7&height=35&section=header&text=🌸%20About%20Me&fontSize=20&fontColor=ffffff&fontAlign=50&fontAlignY=50" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=f3a6c7&height=40&text=🌸%20About%20Me&fontSize=20&fontColor=ffffff&fontAlign=50&fontAlignY=50" />
 </p>
 
 <div align="center">
@@ -72,7 +72,7 @@
 <img src="./Assets/pink-divider.svg" width="100%" />
 
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=f3a6c7&height=35&section=header&text=📊%20Abydos%20Database&fontSize=20&fontColor=ffffff&fontAlign=50&fontAlignY=50" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=f3a6c7&height=40&text=📊%20Abydos%20Database&fontSize=20&fontColor=ffffff&fontAlign=50&fontAlignY=50" />
 </p>
 
 <div align="center">
@@ -95,7 +95,7 @@
 <img src="./Assets/pink-divider.svg" width="100%" />
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=f9dbe9&height=35&section=header&text=💻%20My%20Dev%20Environment&fontSize=20&fontColor=ffffff&fontAlign=50&fontAlignY=50" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=f3a6c7&height=40&text=💻%20My%20Dev%20Environment&fontSize=20&fontColor=ffffff&fontAlign=50&fontAlignY=50" />
   <br/>
   <table border="0" style="background-color: #f3a6c71f; border: 2px solid #f3a6c7; border-radius: 16px; border-collapse: separate; width: 100%; max-width: 1100px;">
     <tr>
