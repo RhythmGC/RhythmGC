@@ -7,7 +7,7 @@
 </div>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Status-Simping%20for%20Hoshino-f3a6c7?style=for-the-badge&logo=heart&logoColor=white" />
+  <img src="https://img.shields.io/badge/Status-Simping_for_Hoshino-f3a6c7?style=for-the-badge&logo=heart&logoColor=white" alt="Status" />
   <img src="https://komarev.com/ghpvc/?username=RhythmGC&label=Profile%20Views&color=f3a6c7&style=for-the-badge" alt="Profile Views" />
 </p>
 
