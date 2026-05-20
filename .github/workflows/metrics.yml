@@ -40,9 +40,7 @@ jobs:
           plugin_notable_from: all
           
           # output path
-          output_action: commit
-          committer_branch: main
-          committer_message: "chore: update metrics [skip ci]"
+          output_action: none
           filename: Assets/github-metrics.svg
           
       - name: GitHub Profile 3D Contrib
@@ -62,4 +60,5 @@ jobs:
           git config --local user.name "GitHub Action"
           git add -A
           git commit -m "chore: update profile [skip ci]" || exit 0
+          git pull --rebase origin main
           git push
