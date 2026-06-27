@@ -37,19 +37,19 @@
 
   <!-- Status dot -->
   <circle cx="84" cy="84" r="9"  fill="#0d1117"/>
-  <circle cx="84" cy="84" r="6.5" fill="#f04747"/>
+  <circle cx="84" cy="84" r="6.5" fill="#747f8d"/>
 
   <!-- Profile text — white + #ffb6c1 sub, matching README font style -->
   <text x="112" y="34" font-family="Segoe UI,sans-serif" font-size="21" font-weight="bold" fill="#ffffff">RhythmGC</text>
   <text x="112" y="53" font-family="Segoe UI,sans-serif" font-size="13" fill="#ffb6c1" opacity="0.85">@rhythmgc</text>
-  <text x="112" y="73" font-family="Segoe UI,sans-serif" font-size="12" font-style="italic" fill="#ff69b4">"she look at me as a friend but I'm not"</text>
+  <text x="112" y="73" font-family="Segoe UI,sans-serif" font-size="12" font-style="italic" fill="#ff69b4">""</text>
 
   <!-- Status badge pill — #ff69b4 border like README table -->
   <rect x="112" y="80" width="68" height="18" rx="9"
         fill="#ff69b4" fill-opacity="0.20"
         stroke="#ff69b4" stroke-width="1.2"/>
   <text x="146" y="93" text-anchor="middle"
-        font-family="Segoe UI,sans-serif" font-size="10" font-weight="bold" fill="#ffffff">DND</text>
+        font-family="Segoe UI,sans-serif" font-size="10" font-weight="bold" fill="#ffffff">OFFLINE</text>
 
   <!-- Divider — same #ff69b4 as README pink-divider.svg -->
   <line x1="12" y1="110" x2="468" y2="110"
